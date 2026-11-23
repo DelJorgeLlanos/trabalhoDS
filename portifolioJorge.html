@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Llanos</title>
+    <link rel="icon" type="image/png" href="assets/portifolioJorge/JorgeFoto.png">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #f4efe6;
+            color: #3a322b;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* Barra do topo */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 16px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #d6cbb9;
+        }
+
+        header span {
+            font-family: monospace;
+            color: #7c6d5d;
+            font-size: 14px;
+        }
+
+        /* Blocos de seção */
+        section {
+            background-color: #fbf8f3;
+            border: 1px solid #dfd5c5;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 24px;
+        }
+
+        h1, h2, h3 {
+            color: #261f19;
+            margin-top: 0;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h1::before, h2::before, h3::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background-color: #9c6644;
+            border-radius: 2px;
+        }
+
+        /* Listas estilizadas como tags/itens */
+        ul.info-lista {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul.info-lista li {
+            background-color: #ede4d5;
+            border: 1px solid #d4c6b0;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        ul.info-lista li b {
+            color: #7f4f24;
+        }
+
+        /* Galeria de fotos com Flex */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .galeria img {
+            height: 210px;
+            width: auto;
+            border-radius: 6px;
+            border: 2px solid #d6cbb9;
+            transition: border-color 0.2s;
+        }
+
+        .galeria img:hover {
+            border-color: #9c6644;
+        }
+
+        /* Grid/Flex para Jogos e Lugares */
+        .vitrine {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .vitrine li {
+            background-color: #f4efe6;
+            border: 1px solid #d8ccb8;
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .vitrine li:hover {
+            border-color: #9c6644;
+            transform: translateY(-3px);
+        }
+
+        .vitrine img {
+            height: 170px;
+            width: auto;
+            border-radius: 4px;
+        }
+
+        .vitrine b, .vitrine a {
+            color: #261f19;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .vitrine a:hover {
+            color: #9c6644;
+            text-decoration: underline;
+        }
+
+    
+        .duas-colunas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .duas-colunas section {
+            flex: 1;
+            min-width: 280px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="paginaInicial.html">
+            <img src="assets/J&D.png" height="45px" alt="Logo">
+        </a>
+        <span>// portfólio pessoal</span>
+    </header>
+
+    <section>
+        <h1>Apresentação pessoal</h1>
+        <ul class="info-lista">
+            <li><b>Nome:</b> Jorge Del Carmen Concha Llanos Neto</li>
+            <li><b>Nascimento:</b> 04/01/2011</li>
+            <li><b>Onde moro:</b> Jardim São Luís</li>
+        </ul>
+
+        <div class="galeria">
+            <img src="assets/portifolioJorge/JorgeFoto.png" alt="Jorge 1">
+            <img src="assets/portifolioJorge/JorgeFoto2.jpg" alt="Jorge 2">
+            <img src="assets/portifolioJorge/JorgeFoto3.jpg" alt="Jorge 3">
+            <img src="assets/jardimSaoLuis.jpg" alt="Jardim São Luís">
+        </div>
+    </section>
+
+    <section>
+        <h2>Curiosidades</h2>
+        <ul class="info-lista">
+            <li>Tenho 2 cachorros e 2 gatos</li>
+            <li>Eu já tive cobras como pet</li>
+            <li>Eu já fui careca</li>
+        </ul>
+
+        <div class="galeria">
+            <img src="assets/portifolioJorge/Cobra.png" alt="Cobra">
+            <img src="assets/portifolioJorge/JorgeCareca.jpg" alt="Jorge Careca">
+        </div>
+    </section>
+
+    <section>
+        <h3>Meus jogos favoritos</h3>
+        <ul class="vitrine">
+            <li>
+                <img src="assets/portifolioJorge/Red_Dead_Redemption_2.png" alt="RDR2">
+                <b>Red Dead Redemption 2</b>
+            </li>
+            <li>
+                <img src="assets/portifolioJorge/Minecraft.png" alt="Minecraft">
+                <b>Minecraft</b>
+            </li>
+            <li>
+                <img src="assets/portifolioJorge/GodOfWar.png" alt="God of War">
+                <b>God of War</b>
+            </li>
+        </ul>
+    </section>
+
+    <div class="duas-colunas">
+        <section>
+            <h2>Lugares que eu já fui</h2>
+            <ul class="vitrine">
+                <li>
+                    <img src="assets/portifolioJorge/Florianopolis.jpg" alt="Florianópolis">
+                    <a href="https://pt.wikipedia.org/wiki/Florian%C3%B3polis" target="_blank">Florianópolis ↗</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quero conhecer</h2>
+            <ul class="vitrine">
+                <li>
+                    <img src="assets/portifolioJorge/Canada.jpg" alt="Canadá">
+                    <a href="https://pt.wikipedia.org/wiki/Canad%C3%A1" target="_blank">Canadá ↗</a>
+                </li>
+                <li>
+                    <img src="https://www.outlooktravelmag.com/media/Lake-Como-Industry-Insights-main-jpg-webp.webp" alt="Lake Como">
+                    <a href="https://pt.wikipedia.org/wiki/Lago_de_Como" target="_blank">Lake Como ↗</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
